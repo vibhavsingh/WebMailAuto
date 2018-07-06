@@ -22,11 +22,11 @@ public class checkMail {
 				"C:\\Users\\vibhavsingh\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		try {
-			BufferedReader
+			// BufferedReader
 			prop = new Properties();
-			/*FileInputStream ip = new FileInputStream(System.getProperty("user.dir")
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")
 					+ "C:\\Users\\vibhavsingh\\eclipse-workspace\\WebMailAuto\\src\\main\\java\\WebM\\store.properties");
-			prop.load(ip);*/
+			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -38,7 +38,7 @@ public class checkMail {
 		driver.findElement(By.cssSelector("input#password")).sendKeys("Vibhav@321#");
 		driver.findElement(By.cssSelector("input.ZLoginButton.DwtButton")).click();
 		// driver.findElement(By.cssSelector("td[id='zb__NEW_MENU_title']").click();
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		// driver.findElement(By.cssSelector("body")).sendKeys(Keys.chord("n", "m"));
 		String selectAll = Keys.chord("n", "m");
 		driver.findElement(By.cssSelector("body")).sendKeys(selectAll);
@@ -47,6 +47,6 @@ public class checkMail {
 		driver.findElement(By.cssSelector("div[id=\"DWT100\"]")).sendKeys("CCmailID");
 		driver.findElement(By.cssSelector("input[id=\"zv__COMPOSE-2_subject_control\"]")).sendKeys(timeStamp);
 		driver.findElement(By.cssSelector("body[data-id=\"ZmHtmlEditor2_body\"]")).sendKeys("Text");
-	driver.close();
+		driver.close();
 	}
 }
