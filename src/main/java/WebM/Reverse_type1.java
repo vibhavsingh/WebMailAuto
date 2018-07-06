@@ -1,6 +1,7 @@
 package WebM;
 
 import java.util.ArrayList;
+import java.util.*;
 import java.util.Scanner;
 
 public class Reverse_type1 {
